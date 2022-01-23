@@ -131,8 +131,6 @@ li {
   }
 }
 
-
-
 /*-------------------------------------------
 Menu
 -------------------------------------------*/
@@ -168,6 +166,87 @@ Menu
       width: 13%;
       text-align: right;
       padding-top: 8px;
+    }
+  }
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+.main-about {
+  margin-top: 20px;
+
+  &__img {
+    background-image: url(../../images/about.jpg);
+    position: relative;
+    height: 94px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+
+    & li {
+      line-height: 2;
+      text-align: left;
+      padding: 2%;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: $cBlack;
+
+    &::before {
+      @include btnBorder(2px, 50%);
+      right: 0;
+      bottom: 0;
+    }
+
+    &:hover::before {
+      height: 100%;
+    }
+
+    &::after {
+      @include btnBorder(20%, 2px);
+      right: 0;
+      bottom: 0;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    & span {
+      display: block;
+      line-height: 50px;
+      position: relative;
+
+      &::before {
+        @include btnBorder(2px, 50%);
+        left: 0;
+        top: 0;
+      }
+
+      &:hover::before {
+        height: 100%;
+      }
+
+      &::after {
+        @include btnBorder(20%, 2px);
+        left: 0;
+        top: 0;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
 }

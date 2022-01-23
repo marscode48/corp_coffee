@@ -150,6 +150,112 @@ Menu
   padding-top: 8px;
 }
 
+/*-------------------------------------------
+About
+-------------------------------------------*/
+.main-about {
+  margin-top: 20px;
+}
+
+.main-about__img {
+  background-image: url(../../images/about.jpg);
+  position: relative;
+  height: 94px;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-about__text {
+  margin-bottom: 40px;
+}
+
+.main-about__text li {
+  line-height: 2;
+  text-align: left;
+  padding: 2%;
+}
+
+.main-about .btn {
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: black;
+}
+
+.main-about .btn::before {
+  position: absolute;
+  content: "";
+  background: #e03131;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 2px;
+  height: 50%;
+  right: 0;
+  bottom: 0;
+}
+
+.main-about .btn:hover::before {
+  height: 100%;
+}
+
+.main-about .btn::after {
+  position: absolute;
+  content: "";
+  background: #e03131;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 20%;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+}
+
+.main-about .btn:hover::after {
+  width: 100%;
+}
+
+.main-about .btn span {
+  display: block;
+  line-height: 50px;
+  position: relative;
+}
+
+.main-about .btn span::before {
+  position: absolute;
+  content: "";
+  background: #e03131;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 2px;
+  height: 50%;
+  left: 0;
+  top: 0;
+}
+
+.main-about .btn span:hover::before {
+  height: 100%;
+}
+
+.main-about .btn span::after {
+  position: absolute;
+  content: "";
+  background: #e03131;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 20%;
+  height: 2px;
+  left: 0;
+  top: 0;
+}
+
+.main-about .btn span:hover::after {
+  width: 100%;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
