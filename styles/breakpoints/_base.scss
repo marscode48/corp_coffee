@@ -106,7 +106,7 @@ li {
 ヘッダー
 -------------------------------------------*/
 .header {
-  background-image: url(../../images/mainvisual.jpg);
+  background-image: url(../images/mainvisual.jpg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ About
   margin-top: 20px;
 
   &__img {
-    background-image: url(../../images/about.jpg);
+    background-image: url(../images/about.jpg);
     position: relative;
   }
 
