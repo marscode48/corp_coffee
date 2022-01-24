@@ -1,0 +1,67 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.site-title {
+  top: 45%;
+}
+.sec-title {
+  font-size: 4.5rem;
+  top: 30%;
+}
+.item-title {
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+}
+.wrapper {
+  padding: 90px 16px 150px 16px;
+}
+.bg-fixed {
+  height: 300px;
+  background-attachment: fixed;
+}
+
+/*-------------------------------------------
+Menu
+-------------------------------------------*/
+.main-menu {
+  margin-top: 20px;
+
+  &__content {
+    display: flex;
+  }
+  
+  &__item {
+    width: 50%;
+    padding: 0 45px;
+
+    &:first-child {
+      border-right: solid 1px $cBlack;
+    }
+  }
+
+  &__list {
+    margin-bottom: 0;
+  }
+
+  .food {
+    margin-bottom: 55px;
+  }
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+.main-about {
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    & li {
+      width: 50%;
+    }
+  }
+}
