@@ -51,6 +51,12 @@ li {
   display: inline-block;
   margin-bottom: 25px;
 }
+.bg-fixed {
+  height: 94px;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+}
 
 // .font-sm {
 //   font-size: 14px;
@@ -140,14 +146,6 @@ Menu
   &__img {
     background-image: url(../images/menu.jpg);
     position: relative;
-    height: 94px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
   }
 
   &__list {
@@ -179,9 +177,6 @@ About
   &__img {
     background-image: url(../../images/about.jpg);
     position: relative;
-    height: 94px;
-    background-size: cover;
-    background-position: center;
   }
 
   &__text {
@@ -259,9 +254,6 @@ Location
 
   &__img {
     background-image: url(../images/location.jpg);
-    height: 94px;
-    background-size: cover;
-    background-position: center;
     position: relative;
   }
 
