@@ -63,6 +63,13 @@ li {
   margin-bottom: 25px;
 }
 
+.bg-fixed {
+  height: 94px;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+}
+
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -113,19 +120,6 @@ Menu
 .main-menu__img {
   background-image: url(../images/menu.jpg);
   position: relative;
-  height: 94px;
-  background-size: cover;
-  background-position: center;
-}
-
-.main-menu__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .main-menu__list {
@@ -160,9 +154,6 @@ About
 .main-about__img {
   background-image: url(../../images/about.jpg);
   position: relative;
-  height: 94px;
-  background-size: cover;
-  background-position: center;
 }
 
 .main-about__text {
@@ -265,9 +256,6 @@ Location
 
 .main-location__img {
   background-image: url(../images/location.jpg);
-  height: 94px;
-  background-size: cover;
-  background-position: center;
   position: relative;
 }
 
@@ -322,6 +310,65 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .site-title {
+    top: 45%;
+  }
+  .sec-title {
+    font-size: 4.5rem;
+    top: 30%;
+  }
+  .item-title {
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+  }
+  .wrapper {
+    padding: 90px 16px 150px 16px;
+  }
+  .bg-fixed {
+    height: 300px;
+    background-attachment: fixed;
+  }
+  /*-------------------------------------------
+Menu
+-------------------------------------------*/
+  .main-menu {
+    margin-top: 20px;
+  }
+  .main-menu__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-menu__item {
+    width: 50%;
+    padding: 0 45px;
+  }
+  .main-menu__item:first-child {
+    border-right: solid 1px black;
+  }
+  .main-menu__list {
+    margin-bottom: 0;
+  }
+  .main-menu .food {
+    margin-bottom: 55px;
+  }
+  /*-------------------------------------------
+About
+-------------------------------------------*/
+  .main-about__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .main-about__text li {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1280px) {
